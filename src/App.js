@@ -17,7 +17,8 @@ class App extends React.Component {
     const { open } = this.state;
 
     return (
-      <div style={{ textAlign: "center" }}>
+      // here, we could use also <> </> new fragment syntax
+      <React.Fragment>
         <h6>Portals provide a quick and seamless way to “render children into a DOM node that exists outside the DOM hierarchy of the parent component,” (React documentation).</h6>
         <button id="open-button" onClick={this.toggleModal}>
           Toggle
@@ -25,7 +26,7 @@ class App extends React.Component {
         <UIModal show={open} onHide={this.toggleModal}>
           A portal example
         </UIModal>
-      </div>
+      </React.Fragment>
     );
   }
 }

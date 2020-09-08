@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   font-family: sans-serif;
 }
 
 .modal-dialog {
-  background: red;
-  margin: 10rem auto;
+  background:#c32333;
+  margin: 5rem auto;
   width: 50%;
+  padding: 5rem;
 }
