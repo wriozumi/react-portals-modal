@@ -18,9 +18,9 @@ class App extends React.Component {
 
     return (
       <div style={{ textAlign: "center" }}>
-        <h2>React Portal Example</h2>
+        <h6>Portals provide a quick and seamless way to “render children into a DOM node that exists outside the DOM hierarchy of the parent component,” (React documentation).</h6>
         <button id="open-button" onClick={this.toggleModal}>
-          Toggle Modal
+          Toggle
         </button>
         <UIModal show={open} onHide={this.toggleModal}>
           A portal example
